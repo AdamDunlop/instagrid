@@ -6,6 +6,8 @@ $(function(){
     var $input = $('.hashname').val();
     var $instapics = '';
     var $getInstagrid = $('.grid');
+    
+    
 
     $.ajax({
         dataType:'jsonp',
