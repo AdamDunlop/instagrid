@@ -12,11 +12,17 @@ var gulp = require('gulp');
     rename = require('gulp-rename');
 
 
-// gulp.task('gulp-ruby-sass', function() {
-//     return sass('style.css')
-//     .on('error', sass.logError)
-//     .pipe(gulp.dest('result'));
-// });
+gulp.task('gulp-ruby-sass', function() {
+    gulp.src('scss/style.scss')
+    .pipe(sass())
+    .pipe(autoprefixer({
+        browser:['last 2 versions']
+    })) 
+    .pipe(minifyCSS())
+    .pipe(rename(style.min.css))
+    .on('error', sass.logError)
+    .pipe(gulp.dest('build'));
+});
 
 
 gulp.task('uglify', function(){

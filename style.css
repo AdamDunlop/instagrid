@@ -33,12 +33,6 @@ html, body {
 
   /*-------*/
 
-* { 
-  box-sizing: border-box;
-  outline: 0;
-  vertical-align: baseline;
-
-}
 
 a, a:active, a:focus {
 outline: none;
@@ -152,8 +146,8 @@ section.search{
 
 .grid{
   display: flex;
-  align-items: center;
   justify-content: space-around; /*drawing in the middle*/
+  flex-wrap: wrap;
   flex-direction: column;
 
 }
