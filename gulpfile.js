@@ -12,12 +12,6 @@ var gulp = require('gulp');
     rename = require('gulp-rename');
 
 
-// gulp.task('gulp-ruby-sass', function() {
-//     return sass('style.css')
-//     .on('error', sass.logError)
-//     .pipe(gulp.dest('result'));
-// });
-
 
 gulp.task('uglify', function(){
   gulp.src('js/script.js')
@@ -41,12 +35,6 @@ gulp.task('browserSync', function(){
             });
 
 });
-
-
-// gulp.task('sass-process', function{
-        
-// })
-
 
 gulp.watch(['js/main.js'], ['uglify']);
 gulp.watch(['build/script.js', 'index.html']).on('change', browserSync.reload);
