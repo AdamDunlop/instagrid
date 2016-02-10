@@ -48,13 +48,14 @@ gulp.task('browserSync', function(){
 });
 
 gulp.watch(['js/main.js'], ['uglify']);
-gulp.watch(['build/script.js', 'index.html']).on('change', browserSync.reload);
+gulp.watch(['build/script.js', './build/css/style.min.css', 'index.html']).on('change', browserSync.reload);
 
 
 gulp.task('watch', function(){
-  gulp.watch('sass/*.scss', ['sass']);
+  gulp.watch('css/*.css', ['gulp-ruby-sass']);
   
 });
 
 
 gulp.task('default', ['watch', 'browserSync']);
+
