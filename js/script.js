@@ -7,6 +7,7 @@ $(function(){
     var $instapics = '';
     var $getInstagrid = $('.grid');
 
+
     $.ajax({
         dataType:'jsonp',
         method: 'GET',
@@ -17,8 +18,7 @@ $(function(){
     	$.each(photoData.data, function(index, value){
        		  
         $instapics += '<li class="profile-wrapper"><a href="' + value.link + '"><img src="' + value.images.standard_resolution.url + '"/></a>';
-        $instapics += '<div class="transparent">'
-        $instapics += '<div class="profile-picture"><img src="' + value.user.profile_picture + '" /></div>';
+        $instapics += '<div class="transparent">' + '<div class="profile-picture">' + '<img src="' + value.user.profile_picture + '" /></div>';
         $instapics += '<div class="profile-data"><p>' + value.user.username + '</p><p><i class="fa fa-comment"></i>' + value.comments.count 
         $instapics += '<i class="fa fa-heart"></i>' + value.likes.count + '</p></div></div></div></li>';
 
