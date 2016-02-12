@@ -6,7 +6,7 @@ $(function(){
   var $instapics = '';
 
 
-  $('button').on('click', function(event){
+  $('#button').on('click', function(event){
     // event.preventDefault();
     $('.profile-wrapper').empty();
     var $input = $('.hashname').val();
@@ -42,6 +42,7 @@ $(function(){
       url: $loadMore
     }).done(function(photoData){
       $loadMore = photoData.pagination.next_url;
+
       $.each(photoData.data, function(index, value){
 
         $instapics += '<li class="grid"><a href="' + value.link + '"><img src="' + value.images.standard_resolution.url + '"/></a>';
@@ -51,6 +52,7 @@ $(function(){
       }); //each
       $getInstagrid.append($instapics).slideDown();
       $instapics = '';
+
 
     }); //done
 
