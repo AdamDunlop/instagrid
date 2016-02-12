@@ -1,5 +1,5 @@
-html, body {
-  font-family: sans-serif;
+`html, body {
+`  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -16,7 +16,7 @@ html, body {
   font-family: 'Open-Sans';
   src: url("assets/fonts/OpenSans-BoldItalic.ttf");
   font-style: italic;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 @font-face {
@@ -68,15 +68,28 @@ button {
 button:focus {
 	outline: none;
   color: #fff;
-  padding: .5rem .3rem
+  padding: .5rem .3rem;
 }
 
 button:hover {
-    background-color: #b41c15
+    background-color: #b41c15;
 }
 
-footer{
+.btn-big {
+  height: 60px;
+  width: auto;
   color: white;
+	outline: none;
+}
+
+.content{
+  width: 100%;
+  text-align: center;
+}
+/*max-height: 100vh;*/
+
+footer{
+  color: white
   padding-left: 8rem;
   font-size: 1rem;
 }
@@ -86,11 +99,29 @@ form{
   padding-bottom: .4rem;
 }
 
-.btn-big {
-  height: 60px;
-  width: auto;
-  color: white;
-	outline: none;
+.glyphicon.glyphicon-globe {
+  font-size: 75px;
+}
+
+.grid{
+  flex: 0 1 25%;
+  position: relative;
+}
+.grid img{
+  width: 100%;
+}
+
+#hashtag-search{
+	color: white;
+  text-align: center;
+  display: inline;
+}
+
+.hash-symbol{
+	font-size: 1.5rem;
+	font-weight: bold;
+  padding-right: .5rem;
+	padding-left: .5rem;
 }
 
 header{
@@ -107,101 +138,62 @@ header{
   position: relative;
 }
 
-.search-box {
-  padding-top: 7rem;
-  padding-left: 1rem;
-}
-
 input, textarea {
 	background-color: rgba(0,0,0,0.1);
 	color: white;
 	font-size: 1.6rem;
   border: none;
-  width: 80%; 
-  padding-bottom: 12rem
+  width: 80%;
+  padding-bottom: 12rem;
 }
 
-#hashtag-search{
-	color: white;
-  text-align: center;
-  display: inline;
-}
-
-.glyphicon.glyphicon-globe {
-  font-size: 75px;
-}
-
-.hash-symbol{
-	font-size: 1.5rem;
-	font-weight: bold;
-  padding-right: .5rem;
-	padding-left: .5rem
+.load-button{
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
 }
 
 section.search{
   align-items: center;
 }
 
-.grid{
+.profile-wrapper{
   display: flex;
-  justify-content: space-between; /*drawing in the middle*/
-  flex-direction: column;
-     display: -webkit-flex;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-   /* You can set flex-wrap and flex-direction individually */
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   /* Or do it all in one line with flex flow */
-   -webkit-flex-flow: row wrap;
-   flex-flow: row wrap;
-   /* tweak the where items line up on the row */
-   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
-
-}
-
-.profile-wrapper{ 
-  position: relative;
+  flex-wrap: wrap;
 }
 /*wraps the profile image*/
 .profile-picture {
-  width: 40%;
+  /*border-bottom: 0*/
 }
 
 .profile-picture img{
   border-radius: 50%;
   max-width: 80px;
-  margin-left: .6rem; 
+  margin-left: .6rem;
   margin-top: .7rem;
+  margin-bottom: .7rem;
 }
 
 .profile-data{
-  display: flex;  
-  font-weight: bold;
-  top: 0;
-  width: 30%;
-  padding-right: 2rem;
-  align-items: flex-start;
-  flex: 0 0 100%;
-  justify-content: flex-end;
-  flex-direction: column;
+  /*position: absolute;*/
+}
+
+.search-box {
+  padding-top: 7rem;
+  padding-left: 1rem;
 }
 
 .transparent{
+  display: flex;
   position: absolute;
   bottom: 0;
-  left: 0;
-  background-color: #000;
-  opacity: .7;
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, .6);
 }
 
 p {
@@ -212,8 +204,4 @@ p {
 
 textarea:focus, input:focus{
     outline: none;
-
 }
-
-
-  
