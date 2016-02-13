@@ -30,9 +30,12 @@ $(function(){
       });  //closes each
       $getInstagrid.append($instapics).slideDown();
       $instapics = '';
+      // $('.load-button').css('display: initial');
 
     }); //done
   });
+
+
 
   $('.load-button').on('click', function(event){
     event.preventDefault();

@@ -43,7 +43,6 @@ outline: none;
 
 .ajax-loader{
   display: none;
-
 }
 
 body {
@@ -89,14 +88,14 @@ button:hover {
 /*max-height: 100vh;*/
 
 footer{
-  color: white
+  color: white;
   padding-left: 8rem;
   font-size: 1rem;
 }
 
 form{
   border-bottom: .6px solid white;
-  padding-bottom: .4rem;
+  width: 24rem;
 }
 
 .glyphicon.glyphicon-globe {
@@ -114,26 +113,28 @@ form{
 #hashtag-search{
 	color: white;
   text-align: center;
-  display: inline;
 }
 
 .hash-symbol{
 	font-size: 1.5rem;
 	font-weight: bold;
-  padding-right: .5rem;
-	padding-left: .5rem;
 }
 
 header{
   display: flex;
   height: 60vh;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   padding-left: 3rem;
 }
 
+.instagrid-icon{
+  flex-direction: column;
+}
+
 .instagrid-icon img{
-  max-width: 300px;
-  height: 30vh;
+  max-width: 250px;
+  height: 35vh;
   align-items: center;
   position: relative;
 }
@@ -144,7 +145,6 @@ input, textarea {
 	font-size: 1.6rem;
   border: none;
   width: 80%;
-  padding-bottom: 12rem;
 }
 
 .load-button{
@@ -154,10 +154,18 @@ input, textarea {
   width: 100px;
   height: 30px;
   margin: 0 auto;
+  /*display: none;*/
 }
 
 section.search{
   align-items: center;
+}
+
+
+p {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .profile-wrapper{
@@ -165,9 +173,7 @@ section.search{
   flex-wrap: wrap;
 }
 /*wraps the profile image*/
-.profile-picture {
-  /*border-bottom: 0*/
-}
+
 
 .profile-picture img{
   border-radius: 50%;
@@ -182,8 +188,8 @@ section.search{
 }
 
 .search-box {
-  padding-top: 7rem;
   padding-left: 1rem;
+
 }
 
 .transparent{
@@ -196,12 +202,22 @@ section.search{
   background-color: rgba(0, 0, 0, .6);
 }
 
-p {
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
 textarea:focus, input:focus{
     outline: none;
+}
+
+
+@media (max-width: 600px) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  footer {
+    diplay: flex;
+    justify-content: center;
+    }
+
 }
