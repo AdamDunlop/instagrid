@@ -14,5 +14,5 @@ I created an App that populates the 'grid' with instagram photos using the Insta
 - Gulp -- efficient file organization, file minification, browser sync, SASS processing
 - Git and GitHub
 
-##experience
+##Experience
 The most challenging, yet most valuable piece I learned was how to use Gulp and Flex-box to add new dimesions to the project.
