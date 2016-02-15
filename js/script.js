@@ -6,6 +6,7 @@ $(function(){
   var $instapics = '';
 
 
+$('.load-button').hide();
   $('#button').on('click', function(event){
     // event.preventDefault();
     $('.profile-wrapper').empty();
@@ -30,8 +31,7 @@ $(function(){
       });  //closes each
       $getInstagrid.append($instapics).slideDown();
       $instapics = '';
-      // $('.load-button').css('display: initial');
-
+$('.load-button').show();
     }); //done
   });
 
@@ -53,11 +53,13 @@ $(function(){
         $instapics += '<div class="profile-data"><p>' + value.user.username + '</p><p><i class="fa fa-comment"></i>' + value.comments.count;
         $instapics += '<i class="fa fa-heart"></i>' + value.likes.count + '</p></div></div></div></li>';
       }); //each
+
       $getInstagrid.append($instapics).slideDown();
       $instapics = '';
 
 
     }); //done
+
 
   }); //click
 

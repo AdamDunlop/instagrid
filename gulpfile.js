@@ -1,4 +1,4 @@
-    
+
 var gulp = require('gulp');
     uglify = require('gulp-uglify');
     browserSync = require('browser-sync').create();
@@ -16,7 +16,7 @@ gulp.task('gulp-ruby-sass', function() {
     .pipe(sass())
     .pipe(autoprefixer({
         browser:['last 2 versions']
-    })) 
+    }))
     .pipe(minifyCSS())
     .pipe(rename(style.min.css))
     .on('error', sass.logError)
@@ -42,7 +42,7 @@ gulp.task('browserSync', function(){
     browserSync.init({
             server: {
                 baseDir: "./"
-                  }  
+                  }
             });
 
 });
@@ -53,9 +53,8 @@ gulp.watch(['build/script.js', './build/css/style.min.css', 'index.html']).on('c
 
 gulp.task('watch', function(){
   gulp.watch('css/*.css', ['gulp-ruby-sass']);
-  
+
 });
 
 
 gulp.task('default', ['watch', 'browserSync']);
-
