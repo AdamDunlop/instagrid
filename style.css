@@ -1,107 +1,87 @@
 `html, body {
-`  font-family: sans-serif;
+  `  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-
-
 @font-face {
   font-family: 'Open-Sans';
   src: url("assets/fonts/OpenSans-Bold.ttf");
   font-style: normal;
   font-weight: bold;
 }
-
 @font-face {
   font-family: 'Open-Sans';
   src: url("assets/fonts/OpenSans-BoldItalic.ttf");
   font-style: italic;
   font-weight: bold;
 }
-
 @font-face {
   font-family: 'Open-Sans';
   src: url("assets/fonts/OpenSans-Light.ttf");
   font-style: normal;
   font-weight: lighter;
 }
-
 @font-face {
   font-family: 'Open-Sans';
   src: url("assets/fonts/OpenSans-LightItalic.ttf");
   font-style: italic;
   font-weight: lighter;
 }
-
-  /*-------*/
-
-
+/*-------*/
 a, a:active, a:focus {
-outline: none;
+  outline: none;
 }
-
-
 .ajax-loader{
   display: none;
 }
-
 body {
-	background-color: black;
-	text-align: left;
-	font-family: 'Open-Sans',sans-serif;
+  background-color: black;
+  text-align: left;
+  font-family: 'Open-Sans',sans-serif;
   font-style: normal;
-	font-weight: lighter;
-	margin: 0 auto;
-	font-size: 12px;
-	color: #2e2e2e;
+  font-weight: lighter;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #2e2e2e;
 }
-
 button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
 }
-
 button:focus {
-	outline: none;
+  outline: none;
   color: #fff;
   padding: .5rem .3rem;
 }
-
 button:hover {
-    background-color: #b41c15;
+  background-color: #b41c15;
 }
-
 .btn-big {
   height: 60px;
   width: auto;
   color: white;
-	outline: none;
+  outline: none;
 }
-
 .content{
   width: 100%;
   text-align: center;
 }
 /*max-height: 100vh;*/
-
 footer{
   color: white;
   padding-left: 8rem;
   font-size: 1rem;
 }
-
 form{
   border-bottom: .6px solid white;
   width: 24rem;
 }
-
 .glyphicon.glyphicon-globe {
   font-size: 75px;
 }
-
 .grid{
   flex: 0 1 25%;
   position: relative;
@@ -109,44 +89,37 @@ form{
 .grid img{
   width: 100%;
 }
-
 #hashtag-search{
-	color: white;
+  color: white;
   text-align: center;
 }
-
 .hash-symbol{
-	font-size: 1.5rem;
-	font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-
 header{
   display: flex;
-  height: 60vh;
+  height: 85vh;
   justify-content: center;
   align-items: center;
   padding-left: 3rem;
 }
-
 .instagrid-icon{
   flex-direction: column;
 }
-
 .instagrid-icon img{
   max-width: 250px;
   height: 35vh;
   align-items: center;
   position: relative;
 }
-
 input, textarea {
-	background-color: rgba(0,0,0,0.1);
-	color: white;
-	font-size: 1.6rem;
+  background-color: rgba(0,0,0,0.1);
+  color: white;
+  font-size: 1.1rem;
   border: none;
   width: 80%;
 }
-
 .load-button{
   background-color: red;
   color: white;
@@ -154,27 +127,21 @@ input, textarea {
   width: 100px;
   height: 30px;
   margin: 0 auto;
-  /*display: none;*/
 }
-
 section.search{
   align-items: center;
+  font-size: 1.1rem;
 }
-
-
 p {
   color: white;
   font-weight: bold;
   font-size: 1rem;
 }
-
 .profile-wrapper{
   display: flex;
   flex-wrap: wrap;
 }
 /*wraps the profile image*/
-
-
 .profile-picture img{
   border-radius: 50%;
   max-width: 80px;
@@ -182,16 +149,9 @@ p {
   margin-top: .7rem;
   margin-bottom: .7rem;
 }
-
-.profile-data{
-  /*position: absolute;*/
-}
-
 .search-box {
   padding-left: 1rem;
-
 }
-
 .transparent{
   display: flex;
   position: absolute;
@@ -201,23 +161,17 @@ p {
   z-index: 99;
   background-color: rgba(0, 0, 0, .6);
 }
-
 textarea:focus, input:focus{
-    outline: none;
+  outline: none;
 }
-
-
 @media (max-width: 600px) {
 
   header {
     display: flex;
     flex-direction: row;
-
   }
-
   footer {
     diplay: flex;
     justify-content: center;
-    }
-
+  }
 }

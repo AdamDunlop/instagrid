@@ -6,6 +6,7 @@ $(function(){
   var $instapics = '';
 
 
+$('.load-button').hide();
   $('#button').on('click', function(event){
     // event.preventDefault();
     $('.profile-wrapper').empty();
@@ -30,8 +31,7 @@ $(function(){
       });  //closes each
       $getInstagrid.append($instapics).slideDown();
       $instapics = '';
-      $('.load-button').css('hide');
-
+$('.load-button').show();
     }); //done
   });
 
