@@ -1,4 +1,4 @@
-// 'use strict'
+'use strict'
 
 $(function(){
   var $loadMore = '';
@@ -7,7 +7,7 @@ $(function(){
 
 
   $('#button').on('click', function(event){
-    // event.preventDefault();
+    event.preventDefault();
     $('.profile-wrapper').empty();
     var $input = $('.hashname').val();
 
@@ -30,8 +30,6 @@ $(function(){
       });  //closes each
       $getInstagrid.append($instapics).slideDown();
       $instapics = '';
-      // $('.load-button').css('display: initial');
-
     }); //done
   });
 

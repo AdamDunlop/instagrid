@@ -75,6 +75,13 @@ button:hover {
     background-color: #b41c15
 }
 
+.btn-big {
+  height: 60px;
+  width: auto;
+  color: white;
+  outline: none;
+}
+
 footer{
   color: white;
   padding-left: 8rem;
@@ -86,11 +93,21 @@ form{
   padding-bottom: .4rem;
 }
 
-.btn-big {
-  height: 60px;
-  width: auto;
-  color: white;
-	outline: none;
+.grid{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+}
+
+.glyphicon.glyphicon-globe {
+  font-size: 75px;
 }
 
 header{
@@ -107,12 +124,6 @@ header{
   position: relative;
 }
 
-.search-box {
-  padding-top: 26rem;
-  padding-left: 1rem;
-
-}
-
 input, textarea {
 	background-color: rgba(0,0,0,0.1);
 	color: white;
@@ -121,17 +132,12 @@ input, textarea {
   border: none;
   width: 80%;
   padding-top: 1.2rem;
-
 }
 
 #hashtag-search{
 	color: white;
   text-align: center;
   display: inline;
-}
-
-.glyphicon.glyphicon-globe {
-  font-size: 75px;
 }
 
 .hash-symbol{
@@ -143,23 +149,6 @@ input, textarea {
 
 section.search{
   align-items: center;
-}
-
-.grid{
-     display: -webkit-flex;
-   display: flex;
-   /* You can set flex-wrap and flex-direction individually */
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   /* Or do it all in one line with flex flow */
-   -webkit-flex-flow: row wrap;
-   flex-flow: row wrap;
-   /* tweak the where items line up on the row */
-   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
 }
 
 .profile-wrapper{ 
@@ -187,6 +176,12 @@ section.search{
   flex-direction: column;
    -webkit-flex: 3 0 0; 
    flex: 3 0 0; 
+}
+
+.search-box {
+  padding-top: 26rem;
+  padding-left: 1rem;
+
 }
 
 .transparent{
