@@ -4,7 +4,6 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-
 @font-face {
   font-family: 'Open-Sans';
   src: url("assets/fonts/OpenSans-Bold.ttf");
@@ -33,13 +32,9 @@ html, body {
   font-weight: lighter;
 }
 
-  /*-------*/
-
-
 a, a:active, a:focus {
-outline: none;
+  outline: none;
 }
-
 
 .ajax-loader{
   display: none;
@@ -58,11 +53,11 @@ body {
 }
 
 button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    width: 100%
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 100%
 }
 
 button:focus {
@@ -181,7 +176,6 @@ section.search{
 .search-box {
   padding-top: 26rem;
   padding-left: 1rem;
-
 }
 
 .transparent{
@@ -200,12 +194,10 @@ p {
   font-weight: bold;
   font-size: 1rem;
     padding-left: 6rem;
-
 }
 
 textarea:focus, input:focus{
     outline: none;
-
 }
 
 

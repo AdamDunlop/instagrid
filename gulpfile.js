@@ -1,4 +1,3 @@
-    
 var gulp = require('gulp');
     uglify = require('gulp-uglify');
     browserSync = require('browser-sync').create();
@@ -23,7 +22,6 @@ gulp.task('gulp-ruby-sass', function() {
     .pipe(gulp.dest('build'));
 });
 
-
 gulp.task('uglify', function(){
   gulp.src('js/script.js')
     .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
@@ -36,26 +34,21 @@ gulp.task('uglify', function(){
     .pipe(gulp.dest('build'));
 });
 
-
 gulp.task('browserSync', function(){
 
     browserSync.init({
-            server: {
-                baseDir: "./"
-                  }  
-            });
-
+        server: {
+            baseDir: "./"
+              }  
+        });
 });
 
 gulp.watch(['js/main.js'], ['uglify']);
 gulp.watch(['build/script.js', './build/css/style.min.css', 'index.html']).on('change', browserSync.reload);
 
-
 gulp.task('watch', function(){
   gulp.watch('css/*.css', ['gulp-ruby-sass']);
-  
 });
-
 
 gulp.task('default', ['watch', 'browserSync']);
 

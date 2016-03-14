@@ -5,7 +5,6 @@ $(function(){
   var $getInstagrid = $('.profile-wrapper');
   var $instapics = '';
 
-
   $('#button').on('click', function(event){
     event.preventDefault();
     $('.profile-wrapper').empty();
@@ -21,19 +20,15 @@ $(function(){
       $loadMore = photoData.pagination.next_url;
 
       $.each(photoData.data, function(index, value){
-
         $instapics += '<li class="grid"><a href="' + value.link + '"><img src="' + value.images.standard_resolution.url + '"/></a>';
         $instapics += '<div class="transparent">' + '<div class="profile-picture">' + '<img src="' + value.user.profile_picture + '" /></div>';
         $instapics += '<div class="profile-data"><p>' + value.user.username + '</p><p><i class="fa fa-comment"></i>' + value.comments.count;
         $instapics += '<i class="fa fa-heart"></i>' + value.likes.count + '</p></div></div></div></li>';
-
       });  //closes each
       $getInstagrid.append($instapics).slideDown();
       $instapics = '';
     }); //done
   });
-
-
 
   $('.load-button').on('click', function(event){
     event.preventDefault();
@@ -45,7 +40,6 @@ $(function(){
       $loadMore = photoData.pagination.next_url;
 
       $.each(photoData.data, function(index, value){
-
         $instapics += '<li class="grid"><a href="' + value.link + '"><img src="' + value.images.standard_resolution.url + '"/></a>';
         $instapics += '<div class="transparent">' + '<div class="profile-picture">' + '<img src="' + value.user.profile_picture + '" /></div>';
         $instapics += '<div class="profile-data"><p>' + value.user.username + '</p><p><i class="fa fa-comment"></i>' + value.comments.count;
@@ -54,9 +48,6 @@ $(function(){
       $getInstagrid.append($instapics).slideDown();
       $instapics = '';
 
-
     }); //done
-
   }); //click
-
 });

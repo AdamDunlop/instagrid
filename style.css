@@ -4,7 +4,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-
 @font-face {
   font-family: 'Open-Sans';
   src: url("assets/fonts/OpenSans-Bold.ttf");
@@ -35,11 +34,9 @@
 
   /*-------*/
 
-
 a, a:active, a:focus {
 outline: none;
 }
-
 
 .ajax-loader{
   display: none;
@@ -160,7 +157,6 @@ section.search{
   align-items: center;
 }
 
-
 p {
   color: white;
   font-weight: bold;
@@ -173,17 +169,12 @@ p {
 }
 /*wraps the profile image*/
 
-
 .profile-picture img{
   border-radius: 50%;
   max-width: 80px;
   margin-left: .6rem;
   margin-top: .7rem;
   margin-bottom: .7rem;
-}
-
-.profile-data{
-  /*position: absolute;*/
 }
 
 .search-box {
@@ -205,9 +196,7 @@ textarea:focus, input:focus{
     outline: none;
 }
 
-
 @media (max-width: 600px) {
-
   header {
     display: flex;
     flex-direction: row;
@@ -218,5 +207,4 @@ textarea:focus, input:focus{
     diplay: flex;
     justify-content: center;
     }
-
 }
